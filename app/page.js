@@ -2,6 +2,7 @@ import Hero from "./components/Hero";
 import MarLogo from "./components/MarLogo";
 
 import NavBar from "./components/NavBar";
+import Tools from "./components/Tools";
 import Video from "./components/Video";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero></Hero>
       <Video></Video>
       <MarLogo></MarLogo>
+      <Tools></Tools>
     </div>
   );
 }
