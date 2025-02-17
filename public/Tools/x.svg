@@ -1,0 +1,13 @@
+<svg width="45.000000" height="40.781250" viewBox="0 0 45 40.7812" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<radialGradient gradientTransform="translate(22.5 20.3906) rotate(89.7072) scale(22.2183 24.5163)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_radial_444_19967_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#C7D7FF"/>
+			<stop offset="1.000000" stop-color="#788199"/>
+		</radialGradient>
+	</defs>
+	<path id="Vector" d="M35.43 0L42.33 0L27.26 17.27L45 40.78L31.11 40.78L20.23 26.52L7.79 40.78L0.88 40.78L17.01 22.3L0 0L14.23 0L24.06 13.03L35.43 0ZM33.01 36.64L36.84 36.64L12.15 3.92L8.05 3.92L33.01 36.64Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Vector" d="M35.43 0L42.33 0L27.26 17.27L45 40.78L31.11 40.78L20.23 26.52L7.79 40.78L0.88 40.78L17.01 22.3L0 0L14.23 0L24.06 13.03L35.43 0ZM33.01 36.64L36.84 36.64L12.15 3.92L8.05 3.92L33.01 36.64Z" fill="url(#paint_radial_444_19967_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
