@@ -5,7 +5,7 @@ export default function MovingBorderButton({ text = "Start Free Trial" }) {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="relative ">
-        <button className="px-8 btn-wrapper pt-3 pb-2  relative overflow-hidden z-10 bg-[#394258] rounded-[40px] ">
+        <button className="px-8 btn-wrapper pt-3 pb-2  relative overflow-hidden z-10 bg-[#7687B54A] rounded-[40px] ">
           <span className="btn-content"></span>
           <span className="absolute inset-0 bg-repeat-x bg-[url('/blink.gif')] opacity-50 animate-pulse"></span>
           <span className="absolute inset-0 bg-repeat-x bg-[url('/blink.gif')] rotate-180 animate-pulse"></span>

@@ -4,12 +4,12 @@ import React from "react";
 export default function Tools() {
   return (
     <div className="relative flex flex-wrap justify-center items-center gap-8 lg:container mx-auto">
-      <div className="relative p-[2px] rounded-[16px]">
+      <div className="relative p-[2px]">
         {/* Gradient Border Layer */}
         <div
-          className="absolute inset-0 rounded-[16px] pointer-events-none"
+          className="absolute  inset-0 rounded-[16px] pointer-events-none"
           style={{
-            padding: "2px",
+            padding: "3px",
             background: "linear-gradient(to right, #333B4F, #7687B5)",
             WebkitMask:
               "linear-gradient(white 0 0) content-box, linear-gradient(white 0 0)",
@@ -20,7 +20,7 @@ export default function Tools() {
 
         {/* Content Layer */}
         <div
-          className="relative flex items-center justify-center size-28 rounded-[14px] p-6"
+          className="relative flex items-center justify-center size-28 rounded-[16px] "
           style={{
             background: "rgba(120, 129, 153, 0.21)",
             backdropFilter: "blur(8px)",
