@@ -1,5 +1,6 @@
 import React from "react";
 import TriangleShape from "./TriangleShape";
+import MovingBorderButton from "./MovingBorderButton";
 
 function Hero() {
   return (
@@ -32,20 +33,21 @@ function Hero() {
               Transform Your Digital Presence with AI Agents
             </h5>
           </div>
-          <h2 className="text-8xl font-medium my-9">
-            <span className="text-transparent bg-clip-text bg-gradient-to-t from-slate-500 to-white">
-              adTask.ai
-            </span>
+          <h2 className="text-8xl font-medium my-9 relative group">
+            <span className="glow">adTask.ai</span>
           </h2>
+
           <div className="text-center">
-            <p>
+            <p className="text-[#E2E8F8] mb-10">
               {" "}
               Stop struggling with marketing decisions. Our AI assistant
-              analyzes your business, creates personalized strategies, and helps
-              you execute them - all in real-time.
+              analyzes your business, creates <br /> personalized strategies,
+              and helps you execute them - all in real-time.
             </p>
-            <button></button>
-            <p>Try AdTask AI free for 30 days</p>
+            <MovingBorderButton></MovingBorderButton>
+            <p className="text-xs mt-6 text-[#C5CDE3]">
+              Try AdTask AI free for 30 days
+            </p>
           </div>
         </div>
       </div>

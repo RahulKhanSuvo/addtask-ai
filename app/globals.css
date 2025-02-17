@@ -19,3 +19,63 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Glow Effect */
+.glow {
+  background: linear-gradient(to top, #7687B5, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: filter 0.4s ease;
+}
+
+.glow:hover {
+  filter: drop-shadow(0 0 5px #6a86ad);
+}
+
+/* Border Spin Animation */
+@keyframes border-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .btn-wrapper {
+    @apply relative rounded-[40px] overflow-hidden;
+  }
+
+  .btn-wrapper::before {
+    content: "";
+    position: absolute;
+    background-image: conic-gradient(from var(--border-angle), transparent 0%, #dae1f39a, #7687b5e1, #7687B5, #7687b5, #7687b5);
+    @apply animate-border-spin inset-0;
+  }
+
+  .btn-content {
+    @apply absolute w-[calc(100%-4px)] h-[calc(100%-4px)] bottom-[2px] top-[2px] left-[2px] bg-[#7687b5] rounded-[40px] flex items-center justify-center text-white;
+  }
+
+  .video-wrapper {
+    @apply relative rounded-[40px] overflow-hidden;
+  }
+
+  .video-wrapper::before {
+    content: "";
+    position: absolute;
+    background-image: conic-gradient(from var(--border-angle), transparent 0%, #566999);
+    @apply animate-border-spin inset-0;
+  }
+
+  .video-content {
+    @apply absolute w-[calc(100%-3px)] h-[calc(100%-4px)] left-[1.5px] top-[2.4px] bg-black rounded-[40px] flex items-center justify-center text-white;
+  }
+}

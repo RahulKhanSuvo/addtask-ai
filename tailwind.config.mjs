@@ -11,6 +11,14 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        "border-spin": {
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
+      animation: {
+        "border-spin": "border-spin 4s linear infinite",
+      },
     },
   },
   plugins: [],
