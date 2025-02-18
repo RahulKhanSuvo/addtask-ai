@@ -91,4 +91,18 @@ body {
   .video-content {
     @apply absolute w-[calc(100%-3px)] h-[calc(100%-4px)] left-[1.5px] top-[2.4px] bg-black rounded-[40px] flex items-center justify-center text-white;
   }
+
+  .radar {
+    animation: stepper 2s linear infinite;
+  }
+
+  @keyframes stepper {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }

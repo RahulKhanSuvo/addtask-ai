@@ -1,3 +1,4 @@
+import Feature from "./components/Feature";
 import Hero from "./components/Hero";
 import MarLogo from "./components/MarLogo";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <Video></Video>
       <MarLogo></MarLogo>
       <Tools></Tools>
+      <Feature></Feature>
     </div>
   );
 }
