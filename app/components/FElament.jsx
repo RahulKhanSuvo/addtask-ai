@@ -28,9 +28,11 @@ export default function FElement() {
               opacity: 1,
             }}
             transition={{
-              duration: 2,
+              delay: 2,
+              duration: 3,
               repeat: Infinity,
               repeatType: "reverse",
+              ease: "easeInOut",
             }}
             className=" absolute top-20 right-10"
             xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +46,19 @@ export default function FElement() {
               fill="#788199"
             />
           </motion.svg>
-          <svg
+          <motion.svg
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+            }}
             className=" absolute  left-10"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -56,8 +70,20 @@ export default function FElement() {
               d="M12 12C15.315 12 18 9.315 18 6C18 2.685 15.315 0 12 0C8.685 0 6 2.685 6 6C6 9.315 8.685 12 12 12ZM12 15C7.995 15 0 17.01 0 21V22.5C0 23.325 0.675 24 1.5 24H22.5C23.325 24 24 23.325 24 22.5V21C24 17.01 16.005 15 12 15Z"
               fill="#788199"
             />
-          </svg>
-          <svg
+          </motion.svg>
+          <motion.svg
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+            }}
             className=" absolute bottom-36 right-16"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -69,7 +95,7 @@ export default function FElement() {
               d="M12 12C15.315 12 18 9.315 18 6C18 2.685 15.315 0 12 0C8.685 0 6 2.685 6 6C6 9.315 8.685 12 12 12ZM12 15C7.995 15 0 17.01 0 21V22.5C0 23.325 0.675 24 1.5 24H22.5C23.325 24 24 23.325 24 22.5V21C24 17.01 16.005 15 12 15Z"
               fill="#788199"
             />
-          </svg>
+          </motion.svg>
           <div className="flex items-center justify-center">
             <motion.div
               animate={{
