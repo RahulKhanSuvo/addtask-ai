@@ -12,11 +12,26 @@ export default function FElement() {
         }}
         className="w-[350px] relative rounded-2xl  overflow-hidden h-[590px]"
       >
+        <motion.div
+          className="backdrop-blur-3xl opacity-50"
+          transition={{ duration: 1, delay: 0.5 }}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: "50%",
+            transform: "translateX(-50%)",
+            width: "0",
+            height: "0",
+            borderLeft: "100px solid transparent",
+            borderRight: "100px solid transparent",
+            borderBottom: "480px solid rgba(200, 230, 255, 0.3)",
+            filter: "blur(40px)",
+          }}
+        />
         <div
           style={{
             borderRadius: "395.321px",
             border: " 1px solid #5C73AE",
-            opacity: " 0.28",
           }}
           className="size-[395px] flex items-center justify-center mt-16 absolute -left-6 "
         >
@@ -109,37 +124,48 @@ export default function FElement() {
                   "conic-gradient(from 58deg at 50% 50%, #DF215F00 7%, #7687B5DB 7%, #7687B5DB 9%, #DF215F00 9%, #DF215F00 22%),conic-gradient(from 22deg at 50% 50%, #333B4FAD 17%, #DF215F00 18%, #DF215F00 19%, #DF215F00 21%, #DF215F00 23%)",
                 borderRadius: "50%",
               }}
-              className="size-[120px]"
+              className="size-[120px] "
             ></motion.div>
-            <div className="bg-[#e6edff6b] size-[12px] absolute rounded-full"></div>
+            <div
+              className=" size-[12px]  absolute rounded-full"
+              style={{ backgroundColor: "white", zIndex: 100 }}
+            ></div>
+
             <motion.div
               animate={{
                 scale: [1, 90],
-                backgroundColor: ["#e6edff15"],
+                opacity: [1, 0, 1],
               }}
               transition={{
                 duration: 4,
                 repeat: Infinity,
                 ease: "linear",
               }}
-              className="bg-[#e6edff15] absolute   rounded-full size-[12px]"
+              className="bg-[#e6edff0e] absolute  rounded-full size-[12px]"
             ></motion.div>
             <motion.div
               animate={{
                 scale: [1, 100],
-                backgroundColor: ["#e6edff15"],
                 outlineWidth: [0, 2, 0],
                 outlineColor: ["transparent", "#e6edff60", "transparent"],
+                opacity: [1, 0, 1],
               }}
               transition={{
                 delay: 1,
                 duration: 4,
                 repeat: Infinity,
-                ease: "linear",
+                ease: [0.5, 0.1, 0.25, 1],
               }}
-              className="absolute rounded-full size-[12px]"
+              className="absolute rounded-full bg-[#e6edff0e]  size-[12px]"
             ></motion.div>
           </div>
+        </div>
+        <div className="absolute text-white bottom-4 px-7">
+          <h3 className="text-base font-semibold">Reach Target Audience</h3>
+          <p className="text-xs font-light">
+            Pinpoint the perfect audience with precision. Our AI-driven
+            targeting ensures every message resonates where it matters most.
+          </p>
         </div>
       </div>
     </div>

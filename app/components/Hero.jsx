@@ -28,7 +28,7 @@ function Hero() {
                 fill="#D9D9D9"
               />
             </svg>
-            <h5 className="font-medium uppercase">
+            <h5 className="font-medium uppercase text-white">
               {" "}
               Transform Your Digital Presence with AI Agents
             </h5>
