@@ -10,7 +10,7 @@ export default function FElement() {
           border: "1px solid #7687B5",
           background: "linear-gradient(158deg, #0B0B0B 5.17%, #1D2333 98.61%)",
         }}
-        className="w-[350px] relative rounded-2xl  overflow-hidden h-[590px]"
+        className="w-[350px] relative rounded-2xl border-opacity-5 overflow-hidden h-[590px]"
       >
         <motion.div
           className="backdrop-blur-3xl opacity-50"
@@ -28,12 +28,13 @@ export default function FElement() {
             filter: "blur(40px)",
           }}
         />
+        <div className="w-[104px] absolute h-[53px] rounded-full border bg-[#C7D7FF] hue-rotate-15 blur-[60px] "></div>
         <div
           style={{
             borderRadius: "395.321px",
-            border: " 1px solid #5C73AE",
+            border: "1px solid rgba(92, 115, 174, 0.1)",
           }}
-          className="size-[395px] flex items-center justify-center mt-16 absolute -left-6 "
+          className="size-[395px] flex items-center  justify-center mt-16 absolute -left-6 "
         >
           <motion.svg
             initial={{
@@ -124,7 +125,7 @@ export default function FElement() {
                   "conic-gradient(from 58deg at 50% 50%, #DF215F00 7%, #7687B5DB 7%, #7687B5DB 9%, #DF215F00 9%, #DF215F00 22%),conic-gradient(from 22deg at 50% 50%, #333B4FAD 17%, #DF215F00 18%, #DF215F00 19%, #DF215F00 21%, #DF215F00 23%)",
                 borderRadius: "50%",
               }}
-              className="size-[120px] "
+              className="size-[120px]"
             ></motion.div>
             <div
               className=" size-[12px]  absolute rounded-full"
@@ -133,30 +134,33 @@ export default function FElement() {
 
             <motion.div
               animate={{
-                scale: [1, 90],
-                opacity: [1, 0, 1],
+                scale: [1, 80],
+                opacity: [1, 0],
               }}
               transition={{
                 duration: 4,
                 repeat: Infinity,
-                ease: "linear",
+                repeatType: "loop",
+                ease: "easeOut",
               }}
-              className="bg-[#e6edff0e] absolute  rounded-full size-[12px]"
+              className="bg-[#e6edff46] absolute rounded-full w-[12px] h-[12px]"
             ></motion.div>
+
             <motion.div
               animate={{
-                scale: [1, 100],
-                outlineWidth: [0, 2, 0],
-                outlineColor: ["transparent", "#e6edff60", "transparent"],
-                opacity: [1, 0, 1],
+                scale: [1, 80],
+                outlineWidth: [0, 2],
+                outlineColor: ["transparent", "#e6edff60"],
+                opacity: [1, 0],
               }}
               transition={{
                 delay: 1,
                 duration: 4,
                 repeat: Infinity,
-                ease: [0.5, 0.1, 0.25, 1],
+                repeatType: "loop",
+                ease: "easeOut",
               }}
-              className="absolute rounded-full bg-[#e6edff0e]  size-[12px]"
+              className="absolute rounded-full bg-[#e6edff46] w-[12px] h-[12px]"
             ></motion.div>
           </div>
         </div>

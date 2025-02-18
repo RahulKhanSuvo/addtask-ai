@@ -36,7 +36,6 @@ function Hero() {
           <h2 className="text-8xl font-medium my-9 relative group">
             <span className="glow">adTask.ai</span>
           </h2>
-
           <div className="text-center">
             <p className="text-[#E2E8F8] mb-10">
               {" "}

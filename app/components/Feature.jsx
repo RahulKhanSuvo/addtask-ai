@@ -19,7 +19,9 @@ export default function Feature() {
       <p className="text-center text-sm text-[#E2E8F8] mt-8">
         Experience Intelligent Features to optimize your marketing efforts.
       </p>
-      <FElament></FElament>
+      <div className="flex">
+        <FElament></FElament>
+      </div>
     </div>
   );
 }
