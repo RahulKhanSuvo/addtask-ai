@@ -12,7 +12,6 @@ export default function MovingBorderButton({ text = "Start Free Trial" }) {
           <span className="absolute  -bottom-2 left-1/2 -translate-x-1/2 h-[11px] w-[71px] bg-white blur-md border-[#7687b594] "></span>
           <span className="relative z-10  ">Start Free Trial</span>
         </button>
-        {/* border */}
       </div>
     </div>
   );
